@@ -1,0 +1,85 @@
+2018-05-17 01:11:27,679 ERROR: Exception on /reset_password_request [POST] [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/routes.py", line 205, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 21, in send_password_reset_email
+    user=user, token=token))
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 11, in send_email
+    mail.send(msg)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 867, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.5.1 Authentication Required. Learn more at\n5.5.1  https://support.google.com/mail/?p=WantAuthError x189-v6sm6275697ite.2 - gsmtp', 'skalappservice@gmail.com')
+2018-05-17 01:11:54,608 INFO: Microblog startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:55]
+2018-05-17 01:22:16,897 INFO: Microblog startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:50]
+2018-05-17 01:24:05,615 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:48]
+2018-05-17 01:39:42,634 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:59]
+2018-05-17 01:43:39,905 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 01:46:38,451 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 01:48:15,079 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:09:42,922 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:16:49,496 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:17:54,636 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:19:49,622 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:21:22,954 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:24:39,961 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:26:07,177 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:27:51,476 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:28:19,077 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:28:27,362 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:29:22,196 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:36:42,363 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:40:33,358 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:44:34,874 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:47:57,413 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:48:50,291 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:49:17,961 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:50:14,794 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:53:13,211 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:54:40,671 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 02:55:12,317 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 03:02:57,755 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 03:04:08,740 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 03:05:20,476 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 03:05:33,021 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 03:07:57,345 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 03:11:39,736 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 03:14:15,762 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 03:25:03,913 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 03:25:54,311 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 03:25:56,995 ERROR: Exception on /index [GET] [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/routes.py", line 34, in index
+    if not current_user.is_anonymous():
+TypeError: 'bool' object is not callable

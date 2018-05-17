@@ -1,0 +1,10 @@
+<div class="row comment">
+    <div class="comment-author col-sm-4">
+        <img src="{{ comment.author.get_avatar() }}" width="24">
+        <a href="{{ url_for('user', username=comment.author.username) }}">
+            {{ comment.author.username }}:</a>
+    </div>
+    <div class="comment-body col-sm-8">
+        {{ comment.body }}
+    </div>
+</div>

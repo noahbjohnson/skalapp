@@ -1,0 +1,110 @@
+2018-05-17 00:56:31,059 ERROR: Exception on /reset_password_request [POST] [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 852, in sendmail
+    self.ehlo_or_helo_if_needed()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 600, in ehlo_or_helo_if_needed
+    if not (200 <= self.ehlo()[0] <= 299):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 440, in ehlo
+    self.putcmd(self.ehlo_msg, name or self.local_hostname)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/routes.py", line 205, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 21, in send_password_reset_email
+    user=user, token=token))
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 11, in send_email
+    mail.send(msg)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 152, in __exit__
+    self.host.quit()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 983, in quit
+    res = self.docmd("quit")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 420, in docmd
+    self.putcmd(cmd, args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+2018-05-17 01:00:35,318 INFO: Microblog startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:48]
+2018-05-17 01:00:47,747 ERROR: Exception on /reset_password_request [POST] [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 852, in sendmail
+    self.ehlo_or_helo_if_needed()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 600, in ehlo_or_helo_if_needed
+    if not (200 <= self.ehlo()[0] <= 299):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 440, in ehlo
+    self.putcmd(self.ehlo_msg, name or self.local_hostname)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/routes.py", line 205, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 21, in send_password_reset_email
+    user=user, token=token))
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 11, in send_email
+    mail.send(msg)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 152, in __exit__
+    self.host.quit()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 983, in quit
+    res = self.docmd("quit")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 420, in docmd
+    self.putcmd(cmd, args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+2018-05-17 01:04:50,915 INFO: Microblog startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:55]

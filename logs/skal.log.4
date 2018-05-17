@@ -1,0 +1,93 @@
+2018-05-17 04:05:31,264 ERROR: Exception on /verify_request [GET] [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/routes.py", line 252, in verify_request
+    title='Reset Password', form=form)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: verify_request.html.html
+2018-05-17 04:05:50,996 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 04:05:59,620 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 04:06:11,347 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 04:06:30,801 ERROR: Exception on /verify/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJpZnkiOjEwMSwiZXhwIjoxNTI2NjA3OTc5LjQ1NzcwNn0.0Y4uGSX8wdWvX1JshuhA_hKJTA3hrtm_y4XZ9E7eVQA [GET] [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/routes.py", line 236, in verify
+    return render_template('verify.html')
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/templates/verify.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/templates/bootstrap/base.html", line 19, in block "html"
+    {% block body -%}
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/templates/bootstrap/base.html", line 22, in block "body"
+    {% block content -%}
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/templates/base.html", line 64, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/templates/verify.html", line 16, in block "app_content"
+    {{ wtf.quick_form(form) }}
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/jinja2/runtime.py", line 579, in _invoke
+    rv = self._func(*arguments)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/templates/bootstrap/wtf.html", line 200, in template
+    {{ form.hidden_tag() }}
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2018-05-17 04:07:30,387 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 04:08:34,472 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:62]
+2018-05-17 04:14:00,312 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:66]
+2018-05-17 04:15:05,167 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:66]
+2018-05-17 04:17:27,721 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:66]
+2018-05-17 04:22:18,976 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:66]
+2018-05-17 04:23:47,019 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:66]
+2018-05-17 04:25:38,356 INFO: Skal startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:66]

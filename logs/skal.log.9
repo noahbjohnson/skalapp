@@ -1,0 +1,88 @@
+2018-05-17 01:05:04,621 ERROR: Exception on /reset_password_request [POST] [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/routes.py", line 205, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 21, in send_password_reset_email
+    user=user, token=token))
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 11, in send_email
+    mail.send(msg)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 867, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.5.1 Authentication Required. Learn more at\n5.5.1  https://support.google.com/mail/?p=WantAuthError q21-v6sm8232473itb.4 - gsmtp', 'skalappservice@gmail.com')
+2018-05-17 01:07:00,838 INFO: Microblog startup [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/__init__.py:55]
+2018-05-17 01:07:12,070 ERROR: Exception on /reset_password_request [POST] [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/routes.py", line 205, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 21, in send_password_reset_email
+    user=user, token=token))
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 11, in send_email
+    mail.send(msg)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 867, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.5.1 Authentication Required. Learn more at\n5.5.1  https://support.google.com/mail/?p=WantAuthError e18-v6sm2862421itc.3 - gsmtp', 'skalappservice@gmail.com')
+2018-05-17 01:08:10,987 ERROR: Exception on /reset_password_request [POST] [in /Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/routes.py", line 205, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 21, in send_password_reset_email
+    user=user, token=token))
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/app/webmail.py", line 11, in send_email
+    mail.send(msg)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/Users/noahjohnson/Documents/GitHub/CS330-Final-Project/virtualenviroments/skal/skal/lib/python3.6/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py", line 867, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.5.1 Authentication Required. Learn more at\n5.5.1  https://support.google.com/mail/?p=WantAuthError d143-v6sm2751310itd.35 - gsmtp', 'skalappservice@gmail.com')
