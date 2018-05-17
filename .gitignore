@@ -4,7 +4,6 @@
 */__pycache__/
 /skal/.idea/
 /skal/.vscode/
-*/.env
 /skal/app/logs/
 skal/.DS_Store
 *.db
