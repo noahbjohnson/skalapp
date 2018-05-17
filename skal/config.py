@@ -30,3 +30,5 @@ class Config(object):
 
     # supported languages
     LANGUAGES = ['en', 'es', 'fr']
+
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
