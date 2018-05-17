@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+
+    <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 post-form">
+    {% if form %}
+        {{ wtf.quick_form(form) }}
+    {% endif %}
+    </div>
+    <div class="col-md-2"></div>
+    </div>
+
+    {% for post in posts %}
+        {% include '_post.html' %}
+    {% endfor %}
+
+    <br>
+
+    {% if form %}
+    <div class="alert alert-dismissable alert-info" role="alert">Follow users to see their posts here!<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button></div>
+    {% endif %}
+<nav aria-label="..." class="pagination-control">
+        <ul class="pager">
+            <li class="previous{% if not prev_url %} disabled{% endif %}">
+                <a href="{{ prev_url or '#' }}">
+                    <span aria-hidden="true">&larr;</span> Newer posts
+                </a>
+            </li>
+            <li class="next{% if not next_url %} disabled{% endif %}">
+                <a href="{{ next_url or '#' }}">
+                    Older posts <span aria-hidden="true">&rarr;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+{% endblock %}

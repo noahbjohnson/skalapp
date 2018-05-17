@@ -1,0 +1,12 @@
+/skal/skal/
+/skal/migrations/
+/skal/logs/
+*/__pycache__/
+/skal/.idea/
+/skal/.vscode/
+*/.env
+/skal/app/logs/
+skal/.DS_Store
+*.db
+.DS_Store
+*.pyc
